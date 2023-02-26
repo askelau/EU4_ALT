@@ -16895,3 +16895,42 @@ UKR_ideas = {
 		tolerance_own = 1
 	}
 }
+
+SOV_ideas = {
+	start = {
+		land_morale = 10.15
+		shock_damage = 0.25
+	}
+	bonus = {
+		monarch_military_power = 2
+	}
+	trigger = {
+		tag = CAS
+	}
+	free = yes		#will be added at load.
+	the_reconquista = {
+		colonists = 1 
+	}
+	spanish_inquisition = {
+		movement_speed = 0.15
+		siege_ability = 0.25
+	}
+	cabildos = {
+		global_colonial_growth = 25
+	}
+	inter_caetera = {
+		global_tax_modifier = 0.25
+	}
+	infantas = {
+		diplomatic_reputation = 2
+		governing_capacity_modifier = 0.3
+		ae_impact = 0.2
+	}
+	salamanca_scholars = {
+		army_tradition = 1.5
+		discipline = 0.05
+	}
+	nueva_planta = {
+		technology_cost = -0.05
+	}
+}
