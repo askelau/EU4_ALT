@@ -341,6 +341,7 @@ republic = {
 		protectorate_parliament_legacy
 		prussian_republic
 		united_cantons_legacy
+		communist_republic #this is coustume
 	}
 	reform_levels = {
 		oligarchy_merchant_class_noble_elite = {
