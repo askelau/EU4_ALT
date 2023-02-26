@@ -2,7 +2,6 @@
 REB = "countries/Rebels.txt"
 PIR = "countries/Pirates.txt"
 NAT = "countries/Natives.txt"
-SOV = "countries/SovietUnion.txt"
 
 #Scandinavia
 SWE	= "countries/Sweden.txt"
