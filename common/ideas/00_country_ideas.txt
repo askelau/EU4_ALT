@@ -666,38 +666,39 @@ SPA_ideas = {
 CAS_ideas = {
 	start = {
 		land_morale = 0.15
-		allowed_marine_fraction = 0.25
+		shock_damage = 0.25
 	}
 	bonus = {
-		global_colonial_growth = 25
+		monarch_military_power = 2
 	}
 	trigger = {
 		tag = CAS
 	}
 	free = yes		#will be added at load.
 	the_reconquista = {
-		army_tradition_decay = -0.01
+		colonists = 1 
 	}
 	spanish_inquisition = {
-		global_missionary_strength = 0.02
-		missionaries = 1
+		movement_speed = 0.15
+		siege_ability = 0.25
 	}
 	cabildos = {
-		production_efficiency = 0.1
+		global_colonial_growth = 25
 	}
 	inter_caetera = {
-		idea_claim_colonies = yes
-		colonists = 1
+		global_tax_modifier = 0.25
 	}
 	infantas = {
-		diplomatic_reputation = 1
-		heir_chance = 0.33
+		diplomatic_reputation = 2
+		governing_capacity_modifier = 0.3
+		ae_impact = 0.2
 	}
 	salamanca_scholars = {
-		global_institution_spread = 0.1
+		army_tradition = 1.5
+		discipline = 0.05
 	}
 	nueva_planta = {
-		global_autonomy = -0.05
+		technology_cost = -0.05
 	}
 }
 
