@@ -12181,7 +12181,7 @@ SIS_ideas = {
 RUM_ideas = {
 	start = {
 		manpower_recovery_speed = 0.2
-		land_morale = 0.1
+		land_morale = 10.1
 	}
 	bonus = {
 		land_forcelimit_modifier = 0.25
