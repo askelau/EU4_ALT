@@ -12180,11 +12180,11 @@ SIS_ideas = {
 
 RUM_ideas = {
 	start = {
-		manpower_recovery_speed = 0.2
-		land_morale = 10.1
+		global_manpower_modifier = 0.5
+		discipline = -0.025
 	}
 	bonus = {
-		land_forcelimit_modifier = 0.25
+		global_unrest = -2
 	}
 	trigger = {
 		tag = RUM
@@ -12192,26 +12192,34 @@ RUM_ideas = {
 	free = yes
 	
 	rum_abul_fath = {
-		discipline = 0.05
+		land_forcelimit_modifier = 0.5
 	}
 	rum_king_of_the_east_and_west = {
-		core_creation = -0.20
-		num_accepted_cultures = 1
+		may_establish_frontier = yes
 	}
-	rum_shahanshah = {
-		legitimacy = 1
+	russian_bureaucracy = {
+		yearly_corruption = 0.075
+		years_of_nationalism = -5
+		governing_capacity_modifier = 0.3
 	}
 	rum_sultan_of_rum = {
-		tolerance_heathen = 3
+		land_maintenance_modifier = -0.4
+		infantry_cost = -0.5
+		shock_damage_received = 0.15
+		fire_damage_received = 0.15
 	}
 	rum_sulan_al_bahrayn = {
-		naval_maintenance_modifier = -0.15
+		core_creation = -0.3
+		ae_impact = 0.3
+		province_warscore_cost = -0.3
 	}
 	rum_sultan_al_muazzam = {
-		build_cost = -0.15
+		manpower_recovery_speed = 0.5
+		global_manpower_modifier = 0.75
+		discipline = -0.05
 	}
 	rum_protector_of_dar_al_islam = {
-		global_heretic_missionary_strength = 0.03
+		artillery_power = 0.25
 	}
 }
 
