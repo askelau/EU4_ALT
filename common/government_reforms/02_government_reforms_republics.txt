@@ -763,7 +763,7 @@ communist_republic = {
 		enables_plutocratic_idea_group = yes
 		enables_aristocratic_idea_group = no
 	}
-	duration = 100
+	has_term_election = no
 }
 
 kongsi_federation = {
