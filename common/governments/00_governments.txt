@@ -343,6 +343,7 @@ republic = {
 		united_cantons_legacy
 		communist_republic_legacy
 		nationalsozialistische_state_legacy
+		ravenclaw_republic_legacy
 	}
 	reform_levels = {
 		oligarchy_merchant_class_noble_elite = {
@@ -378,6 +379,7 @@ republic = {
 				millenarian_theocracy_reform
 				communist_republic
 				nationalsozialistische_state
+				ravenclaw_republic
 			}
 		}
 		republican_virtues = {
@@ -1092,10 +1094,12 @@ pre_dharma_mapping = {
 		government = republic
 		legacy_government = nationalsozialistische_state_legacy
 	}
-
-	}
 	stateless_society = {
 		government = tribal
 		legacy_government = stateless_society_legacy
+	}
+	ravenclaw_republic = {
+		government = tribal
+		legacy_government = ravenclaw_republic_legacy
 	}
 }

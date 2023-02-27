@@ -14700,39 +14700,46 @@ WSI_ideas = {
 
 SNA_ideas = {
 	start = {
-		global_tax_modifier = 0.1
-		prestige = 1
+		technology_cost = -0.1
+		idea_cost = -0.1
+		embracement_cost = -0.2
+		advisor_cost = -0.1
+		republican_tradition = 1
+a		dvisor_pool = 2
 	}
 	bonus = {
-		leader_siege = 1
+		possible_policy = 1
+		trade_steering = 0.25
 	}
 	trigger = {
 		tag = SNA
 	}
 	free = yes      #will be added at load.
 	SNA_mercenary_republic = {
-		mercenary_discipline = 0.05
-		mercenary_manpower = 0.5
+		trade_efficiency = 0.2
+		global_institution_spread = 0.33
 	}
 	SNA_sale_of_script = {
-		core_creation = -0.1
+		merchants = 2
 	}
 	SNA_Good_Use_Of_Gold = {
-		inflation_reduction = 0.1
+		merc_maintenance_modifier = -0.25
+		mercenary_manpower = 0.25
+		mercenary_discipline = 0.5
 	}
 	SNA_cowboy_country = {
-		fire_damage = 0.1
+		development_cost = -0.10
+		build_cost = -0.10
 	}
 	SNA_take_what_is_yours = {
-		light_ship_cost = -0.1
-		privateer_efficiency = 0.1
+		stability_cost_modifier = -0.25
+		prestige = 1
 	}
 	SNA_uniting_the_outlaws = {
-		land_forcelimit_modifier = 0.33
+		global_trade_goods_size_modifier = 0.1
 	}
 	SNA_taking_the_fight_south = {
-		movement_speed = 0.15
-		prestige_from_land = 0.5
+		global_ship_trade_power = 0.25
 	}
 }
 

@@ -2865,3 +2865,31 @@ stateless_society_legacy = {
 		factor = 0
 	}
 }
+
+ravenclaw_republic_legacy = {
+	# government mechanics flags go here
+	icon = "judge"
+	allow_normal_conversion = no
+	legacy_government = yes
+	valid_for_new_country = no
+	allow_convert = yes
+
+	duration = 4
+
+	republican_name = yes
+	royal_marriage = no
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+
+	republic = yes
+	modifiers = {
+		max_absolutism = -10
+		merchants = 1
+		yearly_corruption = -0.1
+		monarch_lifespan = 0.25
+	}
+	ai = {
+		factor = 5
+	}
+}
