@@ -615,7 +615,7 @@ tribal = {
 		matrilineal_system_legacy
 		feudal_tribe_legacy
 		great_man_legacy
-		stateless_society_lagacy
+		stateless_society_legacy
 	}
 
 	reform_levels = {
@@ -1096,6 +1096,6 @@ pre_dharma_mapping = {
 	}
 	stateless_society = {
 		government = tribal
-		legacy_government = stateless_society_lagacy
+		legacy_government = stateless_society_legacy
 	}
 }
