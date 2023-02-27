@@ -2835,3 +2835,33 @@ nationalsozialistische_state_legacy = {
 		factor = 0
 	}
 }
+
+stateless_society_legacy = {
+	# government mechanics flags go here
+	icon = "fist_in_air"
+	legacy_government = yes
+	allow_normal_conversion = no
+
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+
+	duration = 5
+
+	tribal_name = yes
+	royal_marriage = no
+
+	tribal = yes
+	modifiers = {
+		defensiveness = 0.75
+		land_morale = 0.15
+		global_tax_modifier = -1
+		global_trade_goods_size_modifier = 0.5
+		global_trade_power = -1
+		production_efficiency = 0.5
+	}
+
+	ai = {
+		factor = 0
+	}
+}

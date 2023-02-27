@@ -1,0 +1,23 @@
+government = tribal
+add_government_reform = stateless_society
+primary_culture = hungarian
+add_accepted_culture = slovak
+add_accepted_culture = transylvanian
+religion = catholic
+technology_group = eastern
+capital = 153 # Buda
+
+change_estate_land_share = {
+	estate = estate_church
+	share = -5
+}
+
+
+1444.11.10 = {
+	monarch = {
+		adm = 3
+		mil = 3
+		dip = 3
+		regent = yes
+	}
+}

@@ -615,6 +615,7 @@ tribal = {
 		matrilineal_system_legacy
 		feudal_tribe_legacy
 		great_man_legacy
+		stateless_society_lagacy
 	}
 
 	reform_levels = {
@@ -1090,5 +1091,11 @@ pre_dharma_mapping = {
 	nationalsozialistische_state = {
 		government = republic
 		legacy_government = nationalsozialistische_state_legacy
+	}
+
+	}
+	stateless_society = {
+		government = tribal
+		legacy_government = stateless_society_lagacy
 	}
 }
