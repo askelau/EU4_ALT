@@ -209,4 +209,6 @@
 soviet_nation_title:0 "Establish the Soviet Union"
 soviet_nation_desc:0 "The Soviet Union will be the liberator of the working class"
 iberian_nation_title:0 "Form the Iberian National state"
-iberian_nation_desc:= "The Iberian peninsula is the natural homeland of a world ruling nationality"
+iberian_nation_desc:0 "The Iberian peninsula is the natural homeland of a world ruling nationality"
+ravenclaw_nation:title:0 "Choose house Ravenclaw"
+ravenclaw_nation_desc:0 "Ravenclaw values intelligence, learning, wisdom and wit"
