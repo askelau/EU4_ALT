@@ -2220,35 +2220,6 @@ peasants_republic_legacy = {
 	}
 }
 
-communist_republic_legacy = {
-	# government mechanics flags go here
-	icon = "fist_in_air"
-	legacy_government = yes
-	allow_normal_conversion = no
-
-	valid_for_new_country = no
-	valid_for_nation_designer = yes
-	nation_designer_cost = 20
-
-	duration = 5
-
-	republican_name = yes
-	royal_marriage = no
-
-	republic = yes
-	modifiers = {
-		governing_capacity = 50000
-		production_efficiency = 0.1
-		land_morale = 0.05
-		global_autonomy = -0.05
-		max_absolutism = -50
-	}
-
-	ai = {
-		factor = 0
-	}
-}
-
 veche_republic_legacy = {
 	# government mechanics flags go here
 	icon = "merchant"
@@ -2802,5 +2773,65 @@ feudal_tribe_legacy = {
 		custom_attributes = {
 			has_tributaries = yes
 		}
+	}
+}
+
+communist_republic_legacy = {
+	# government mechanics flags go here
+	icon = "fist_in_air"
+	legacy_government = yes
+	allow_normal_conversion = no
+
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+
+	duration = 5
+
+	republican_name = yes
+	royal_marriage = no
+
+	republic = yes
+	modifiers = {
+		governing_capacity = 50000
+		production_efficiency = 0.1
+		land_morale = 0.05
+		global_autonomy = -0.05
+		max_absolutism = -50
+	}
+
+	ai = {
+		factor = 0
+	}
+}
+
+nationalsozialistische_state_legacy = {
+	# government mechanics flags go here
+	icon = "parliament_hall"
+	legacy_government = yes
+	allow_normal_conversion = no
+
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+
+	duration = 5
+
+	republican_name = yes
+	royal_marriage = no
+
+	republic = yes
+	modifiers = {
+		global_autonomy = -0.075
+		land_morale = 0.1
+		max_absolutism = 30
+		culture_conversion_cost = -1
+		global_missionary_strength = 0.05
+		global_unrest = 2
+		num_accepted_cultures = -10
+	}
+
+	ai = {
+		factor = 0
 	}
 }

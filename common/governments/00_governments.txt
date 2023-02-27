@@ -342,6 +342,7 @@ republic = {
 		prussian_republic
 		united_cantons_legacy
 		communist_republic_legacy
+		nationalsozialistische_state_legacy
 	}
 	reform_levels = {
 		oligarchy_merchant_class_noble_elite = {
@@ -376,6 +377,7 @@ republic = {
 				kongsi_federation
 				millenarian_theocracy_reform
 				communist_republic
+				nationalsozialistische_state
 			}
 		}
 		republican_virtues = {
@@ -1084,5 +1086,9 @@ pre_dharma_mapping = {
 	communist_republic = {
 		government = republic
 		legacy_government = communist_republic_legacy
+	}
+	nationalsozialistische_state = {
+		government = republic
+		legacy_government = nationalsozialistische_state_legacy
 	}
 }

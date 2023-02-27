@@ -732,39 +732,7 @@ peasants_republic = {
 	duration = 4
 }
 
-communist_republic = {
-	allow_normal_conversion = yes
-	icon = "peasant_republic"
-	valid_for_nation_designer = yes
-	nation_designer_cost = 20
-	legacy_equivalent = communist_republic_legacy
-	modifiers = {
-		production_efficiency = 0.2
-		trade_efficiency = 0.2
-		governing_capacity_modifier = 0.15
-	}
-	effect = {
-		hidden_effect = {
-			if = {
-				limit = {
-					has_global_flag = great_peasants_war_flag
-					is_part_of_hre = yes
-				}
-				1 = {
-					change_variable = {
-						which = GPW_counting_variable
-						value = 2
-					}
-				}
-			}
-		}
-	}
-	custom_attributes = {
-		enables_plutocratic_idea_group = yes
-		enables_aristocratic_idea_group = no
-	}
-	has_term_election = no
-}
+
 
 kongsi_federation = {
 	allow_normal_conversion = yes
@@ -3599,4 +3567,64 @@ millenarian_theocracy_reform = {
 	ai = {
 		factor = 10
 	}
+}
+
+communist_republic = {
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	icon = "peasant_republic"
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+	legacy_equivalent = communist_republic_legacy
+	modifiers = {
+		production_efficiency = 0.2
+		trade_efficiency = 0.2
+		governing_capacity_modifier = 0.15
+	}
+	effect = {
+		hidden_effect = {
+			if = {
+				limit = {
+					has_global_flag = great_peasants_war_flag
+					is_part_of_hre = yes
+				}
+				1 = {
+					change_variable = {
+						which = GPW_counting_variable
+						value = 2
+					}
+				}
+			}
+		}
+	}
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+	has_term_election = no
+}
+
+nationalsozialistische_state = {
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	icon = "military_dictatorship_reform"
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+	legacy_equivalent = nationalsozialistische_state_legacy
+	modifiers = {
+		global_autonomy = -0.075
+		land_morale = 0.1
+		max_absolutism = 30
+		culture_conversion_cost = -1
+		global_missionary_strength = 0.05
+		global_unrest = 2
+		num_accepted_cultures = -10
+	}
+	custom_attributes = {
+		generals_become_rulers = yes
+		locked_government_type = yes
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+	has_term_election = no
 }
