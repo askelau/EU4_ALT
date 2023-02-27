@@ -2,11 +2,11 @@
 
 graphical_culture = westerngfx
 
-color = { 231  181  12 }
+color = { 100 100  100 }
 
 historical_council = harsh
 
-revolutionary_colors = { 5  8  5 }
+revolutionary_colors = { 100 100  100 }
 
 historical_score = 7400
 
