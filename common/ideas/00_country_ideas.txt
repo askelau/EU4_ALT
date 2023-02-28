@@ -1844,12 +1844,12 @@ GEN_Ideas = {
 
 SCO_Ideas = {
 	start = {
-		leader_land_shock = 1
 		land_forcelimit_modifier = 0.33
+		leader_land_shock = 1
 	}
 	
 	bonus = {
-		land_maintenance_modifier = -0.05
+		ae_impact = -0.15
 	}
 	
 	trigger = {
@@ -1858,25 +1858,26 @@ SCO_Ideas = {
 	free = yes
 	
 	break_the_black_douglas = {
-		global_unrest = -1
+		global_tax_modifier = 0.2
 	}
 	modernised_royal_scots_navy = {
-		global_ship_cost = -0.1
+		great_project_upgrade_cost = -0.25
 	}
 	reign_in_the_clans = {
 		global_manpower_modifier = 0.2
+		land_morale = 0.15
 	}
 	comets = {
-		stability_cost_modifier = -0.10
+		global_ship_cost = -0.1
 	}
 	royal_revenue = {
-		global_tax_modifier = 0.1
+		stability_cost_modifier = -0.10
 	}
 	basilikon_doron = {
-		legitimacy = 1
+		global_unrest = -1
 	}
 	act_of_revocation = {
-		ae_impact = -0.15
+		legitimacy = 1
 	}
 }
 
