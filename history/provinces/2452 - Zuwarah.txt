@@ -2,8 +2,8 @@
 
 owner = TUN
 controller = TUN 
-culture = tunisian
-religion = ibadi
+culture = phoenician
+religion = zoroastrian
 capital = "Zuwarah"
 trade_goods = fish
 hre = no
@@ -22,7 +22,3 @@ discovered_by = muslim
 discovered_by = ottoman
 
 
-1558.1.1 = {
-	owner = TRP
-	controller = TRP
-} #Turgut Reis conquers Gharayan
