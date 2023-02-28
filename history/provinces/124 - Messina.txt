@@ -1,9 +1,9 @@
 #124 - Messina
 
-owner = SIC
-controller = SIC
-culture = sicilian 
-religion = catholic 
+owner = TUN
+controller = TUN 
+culture = phoenician
+religion = zoroastrian
 hre = no 
 base_tax = 6 
 base_production = 6

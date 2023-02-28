@@ -2,8 +2,8 @@
 
 owner = TUN
 controller = TUN 
-culture = berber
-religion = sunni
+culture = phoenician
+religion = zoroastrian
 capital = "Constantine"
 trade_goods = grain
 hre = no

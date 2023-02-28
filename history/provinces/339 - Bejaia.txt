@@ -1,9 +1,9 @@
 #339 - Bejaia
 
 owner = TUN
-controller = TUN
-culture = berber
-religion = sunni
+controller = TUN 
+culture = phoenician
+religion = zoroastrian
 capital = "Bejaia"
 trade_goods = iron
 hre = no
@@ -25,6 +25,6 @@ discovered_by = ottoman
 1510.1.1 = {
 	owner = KBA
 	controller = KBA
-	capital = "Kalâa"
+	capital = "Kalï¿½a"
 }
 1600.1.1 = { capital = "Medjana" }
