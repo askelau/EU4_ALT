@@ -1099,7 +1099,7 @@ pre_dharma_mapping = {
 		legacy_government = stateless_society_legacy
 	}
 	ravenclaw_republic = {
-		government = tribal
+		government = republic
 		legacy_government = ravenclaw_republic_legacy
 	}
 }
