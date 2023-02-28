@@ -56,6 +56,7 @@ plutocratic_reform = {
 			technology_group = muslim
 			technology_group = chinese
 			technology_group = east_african
+			technology_group = ottoman
 		}
 	}
 	nation_designer_trigger = {
@@ -64,6 +65,7 @@ plutocratic_reform = {
 			technology_group = muslim
 			technology_group = chinese
 			technology_group = east_african
+			technology_group = ottoman
 		}
 	}
 	valid_for_nation_designer = yes
@@ -1872,8 +1874,7 @@ livonian_naval_monarchy = {
 		development_cost = -0.1
 		allowed_marine_fraction = 0.5
 		monarch_diplomatic_power = 2
-		burghers_loyalty_modifier = 0.1
-		governing_capacity_modifier = -0.5		
+		burghers_loyalty_modifier = 0.1		
 	}
 	
 	removed_effect = {
