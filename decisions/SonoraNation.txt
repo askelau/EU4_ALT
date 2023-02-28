@@ -4,6 +4,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_russia_flag }
 			OR = {
 				ai = no
@@ -64,6 +65,9 @@ country_decisions = {
 			restore_country_name = yes
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
+			252 = {
+				move_capital_effect = yes
+			}
 			if = {
 				limit = { is_revolutionary = no }
 				if = {
