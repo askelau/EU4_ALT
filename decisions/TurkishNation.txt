@@ -5,6 +5,7 @@ country_decisions = {
 		potential = {
 			normal_or_historical_nations = yes
 			was_never_end_game_tag_trigger = yes
+			NOT = { has_country_flag = formed_spain_flag }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
@@ -13,23 +14,26 @@ country_decisions = {
 				is_free_or_tributary_trigger = yes
 				ai = no
 			}
-			NOT = { tag = POL }
+			NOT = { religion_group = muslim }
 			OR = {
 				ai = no
-			}
-			NOT = { tag = PAP }
-			NOT = { tag = HLR }
-			OR = {
-				primary_culture = russian
-				primary_culture = novgorodian
-				primary_culture = ryazanian
+				AND = {
+					ARA = { ai = yes }
+					tag = RUS
+				}
 			}
 			OR = {
 				ai = no
 				AND = {
 					ai = yes
 					num_of_cities = 3
+					NOT = { exists = RUM }
 				}
+			}
+			OR = {
+				primary_culture = russian
+				primary_culture = novgorodian
+				primary_culture = ryazanian
 			}
 			is_colonial_nation = no
 			OR = {
