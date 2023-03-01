@@ -345,6 +345,7 @@ republic = {
 		united_cantons_legacy
 		communist_republic_legacy
 		nationalsozialistische_state_legacy
+		slytherin_state_legacy
 		ravenclaw_republic_legacy
 	}
 	reform_levels = {
@@ -381,6 +382,7 @@ republic = {
 				millenarian_theocracy_reform
 				communist_republic
 				nationalsozialistische_state
+				slytherin_state
 				ravenclaw_republic
 			}
 		}
@@ -1107,5 +1109,9 @@ pre_dharma_mapping = {
 	gryffindor_monarchy = {
 		government = monarchy
 		legacy_government = gryffindor_monarchy_legacy
+	}
+	slytherin_state = {
+		government = republic
+		legacy_government = slytherin_state_legacy
 	}
 }
