@@ -16835,15 +16835,14 @@ JOL_ideas = {
 
 ZUL_ideas = {
 	start = {
-		Yearly_legitimacy = 2
-		Global_Trade_Power = 0.2
-
+		legitimacy = 2
+		republican_tradition = 0.3
+		global_trade_power = 0.2
 	}
 	
 	bonus = {
 		development_cost = -0.15
 		religious_unity = 0.25
-
 	}
 	
 	trigger = {
@@ -16852,26 +16851,25 @@ ZUL_ideas = {
 	free = yes
 	
 	zul_confederacy_of_clans = {
-		sailor_maintenace = -0.1
-		heavy_ship_combat_ability = 0.15
-
+		sailor_maintenance_modifer = -0.1
+		heavy_ship_power = 0.15
 	}
 	zul_the_ukubuthwa = {
 		discipline = 0.75
 	}
 	zul_the_impi_warriors = {
-		prestige_from_sea_battles = 1
-		prestige_from_land_battles = 1
+		prestige_from_sea = 1
+		prestige_from_land = 1
 	}
 	zul_zulu_expansion = {
-		diplomatic_relation = 2
+		diplomatic_upkeep = 2
 	}
 	zul_warrior_culture = {
 		naval_morale = 0.15
 		land_morale = 0.1
 	}
 	zul_shaka_reforms = {
-		national_manpower_modifer = 0.2
+		global_manpower_modifier = 0.2
 	}
 	zul_conquest_through_patronage = {
 		global_unrest = -2 
