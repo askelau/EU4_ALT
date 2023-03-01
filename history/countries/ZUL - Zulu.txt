@@ -1,0 +1,6 @@
+government = monarchy
+add_government_reform = shaka_regime
+primary_culture = nguni
+religion = catholic
+technology_group = western
+
