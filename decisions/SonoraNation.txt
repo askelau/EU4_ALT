@@ -113,7 +113,7 @@ country_decisions = {
 				}
 			}
 		}
-		ai_importance = 400
+		ai_importance = 4000
 	}
 	
 }
