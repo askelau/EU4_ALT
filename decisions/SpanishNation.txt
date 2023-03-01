@@ -155,17 +155,25 @@ country_decisions = {
 			factor = 1
 			modifier = {
 				factor = 0
-				tag = CAS
-				NOT = { is_enemy = ARA }
-				NOT = { is_rival = ARA }
-			}
-			modifier = {
-				factor = 0
-				tag = ARA
-				NOT = { is_enemy = CAS }
-				NOT = { is_rival = CAS }
+				NOT = { tag = CAS }
+				NOT = {
+					calc_true_if = {
+						owns_core_province = 213	# Barcelona
+						owns_core_province = 214	# Arag�n
+						owns_core_province = 215	# Castilla La Vieja
+						owns_core_province = 216	# Salamanca
+						owns_core_province = 224	# Andalucia
+						owns_core_province = 219	# Toledo
+						owns_core_province = 220	# Valencia
+						owns_core_province = 223	# Granada
+						owns_core_province = 227	# Lisboa
+						owns_core_province = 231	# Porto
+						owns_core_province = 210	# Navarra
+						amount = 2
+					}
+				}
 			}
 		}
-		ai_importance = 400
+		ai_importance = 4000
 	}
 }

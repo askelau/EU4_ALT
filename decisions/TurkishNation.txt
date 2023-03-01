@@ -166,7 +166,7 @@ country_decisions = {
 			factor = 1
 			modifier = {
 				factor = 0
-				NOT = { tag = MOS }
+				NOT = { tag = RUS }
 				NOT = {
 					calc_true_if = {
 						owns_core_province = 295			# Moskva
@@ -188,7 +188,7 @@ country_decisions = {
 				}
 			}
 		}
-		ai_importance = 400
+		ai_importance = 4000
 	}
 	
 }
