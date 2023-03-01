@@ -1,6 +1,6 @@
 country_decisions = {
 
-	gryffindor_nation = {
+	slytherin_nation = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
@@ -61,7 +61,7 @@ country_decisions = {
 			owns_core_province = 252			# Inverness	
 		}
 		effect = {
-			change_tag = ZUL
+			change_tag = SOM
 			restore_country_name = yes
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
@@ -72,22 +72,22 @@ country_decisions = {
 				limit = { is_revolutionary = no }
 				if = {
 					limit = { government = republic }
-					change_government_to_monarchy = yes
-					add_government_reform = gryffindor_monarchy
+					add_government_reform = great_veche_republic
 				}
 				else = {
 					if = {
-						limit = { NOT = { government = monarchy } }
+						limit = { NOT = { government = republic } }
+						change_government_to_republic = yes
 					}
-					add_government_reform = gryffindor_monarchy
+					add_government_reform = slytherin_state
 				}
 			}
-			ZUL = { set_government_rank = 3 }
+			SOM = { set_government_rank = 3 }
 			british_isles_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_permanent_claim = ZUL
+				add_permanent_claim = SOM
 			}
 			if = {
 				limit = {
@@ -101,7 +101,7 @@ country_decisions = {
 			factor = 1
 			modifier = {
 				factor = 0
-				NOT = { tag = ZUL }
+				NOT = { tag = SOM }
 				NOT = {
 					calc_true_if = {
 						owns_core_province = 248			# Lothian

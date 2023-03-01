@@ -521,6 +521,7 @@ was_never_end_game_tag_trigger = {	#Country Scope
 				NOT = { was_tag = RUM }
 				NOT = { was_tag = QNG }
 				NOT = { was_tag = SNA }
+				NOT = { was_tag = SOM }
 				NOT = { was_tag = ZUL }
 				NOT = { was_tag = PLC }
 				NOT = { was_tag = JAP }
@@ -557,6 +558,7 @@ was_never_end_game_tag_trigger = {	#Country Scope
 				NOT = { tag = RUM }
 				NOT = { tag = QNG }
 				NOT = { tag = SNA }
+				NOT = { tag = SOM }
 				NOT = { tag = ZUL }
 				NOT = { tag = PLC }
 				NOT = { tag = JAP }
