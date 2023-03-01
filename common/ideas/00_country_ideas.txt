@@ -16855,7 +16855,7 @@ ZUL_ideas = {
 		heavy_ship_power = 0.15
 	}
 	zul_the_ukubuthwa = {
-		discipline = 0.75
+		discipline = 0.075
 	}
 	zul_the_impi_warriors = {
 		prestige_from_sea = 1

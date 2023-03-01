@@ -1,6 +1,6 @@
 government = monarchy
-add_government_reform = shaka_regime
-primary_culture = nguni
+add_government_reform = gryffindor_monarchy
+primary_culture = roman
 religion = catholic
 technology_group = western
 

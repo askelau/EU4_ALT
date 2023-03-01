@@ -29,6 +29,7 @@ monarchy = {
 				celestial_empire
 				shogunate
 				english_monarchy
+				gryffindor_monarchy
 				mandala_reform
 				revolutionary_empire_reform
 				holy_state_reform
@@ -221,6 +222,7 @@ monarchy = {
 		enlightened_despotism
 		revolutionary_empire
 		english_monarchy_legacy
+		gryffindor_monarchy_legacy
 		mamluk_government_legacy
 		feudal_theocracy_legacy
 		elective_monarchy_legacy
@@ -1101,5 +1103,9 @@ pre_dharma_mapping = {
 	ravenclaw_republic = {
 		government = republic
 		legacy_government = ravenclaw_republic_legacy
+	}
+	gryffindor_monarchy = {
+		government = monarchy
+		legacy_government = gryffindor_monarchy_legacy
 	}
 }
