@@ -347,6 +347,7 @@ republic = {
 		nationalsozialistische_state_legacy
 		slytherin_state_legacy
 		ravenclaw_republic_legacy
+		hufflepuff_republic_legacy
 	}
 	reform_levels = {
 		oligarchy_merchant_class_noble_elite = {
@@ -384,6 +385,7 @@ republic = {
 				nationalsozialistische_state
 				slytherin_state
 				ravenclaw_republic
+				hufflepuff_republic
 			}
 		}
 		republican_virtues = {
@@ -1114,4 +1116,9 @@ pre_dharma_mapping = {
 		government = republic
 		legacy_government = slytherin_state_legacy
 	}
+	hufflepuff_republic = {
+		government = republic
+		legacy_government = hufflepuff_republic_legacy
+	}
+	
 }

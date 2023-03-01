@@ -3630,7 +3630,8 @@ nationalsozialistische_state = {
 
 ravenclaw_republic = {
 	icon = "ambrosian_republic"
-	allow_normal_conversion = yes
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
 	legacy_equivalent = ravenclaw_republic_legacy
 	valid_for_nation_designer = yes
 	nation_designer_cost = 25
@@ -3667,4 +3668,24 @@ slytherin_state = {
 		enables_aristocratic_idea_group = no
 	}
 	has_term_election = no
+}
+
+hufflepuff_republic = {
+	icon = "ambrosian_republic"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	legacy_equivalent = hufflepuff_republic_legacy
+	valid_for_nation_designer = yes
+	nation_designer_cost = 25
+	modifiers = {
+		diplomatic_reputation = 1
+		global_spy_defence = 0.1
+		max_absolutism = 10
+	}
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+		locked_government_type = yes
+	}
+	duration = 4
 }
