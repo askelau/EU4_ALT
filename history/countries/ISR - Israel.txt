@@ -1,0 +1,5 @@
+government = republic
+add_government_reform = hufflepuff_republic
+technology_group = western
+religion = catholic
+primary_culture = roman

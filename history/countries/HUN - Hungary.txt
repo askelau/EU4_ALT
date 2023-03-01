@@ -15,6 +15,9 @@ change_estate_land_share = {
 
 1444.11.10 = {
 	monarch = {
+		name = "Bertalan"
+		dynasty = "Orban"
+		birth_date = 1425.3.6
 		adm = 3
 		mil = 3
 		dip = 3
