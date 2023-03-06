@@ -1,0 +1,45 @@
+government = theocracy
+add_government_reform = holy_state_reform
+government_rank = 3
+technology_group = western
+primary_culture = greek
+add_accepted_culture = greek
+religion = catholic
+historical_friend = FRA
+historical_friend = HAB
+capital = 146
+fixed_capital = 4699 # Cannot move capital away from this province & no power cost to move to it
+
+add_country_modifier = {
+			name = "sisters_takeover"
+			duration = -1
+		}
+		if = {
+			limit = {
+				NOT = { government = theocracy }
+			}
+			change_government = theocracy
+		}
+
+		if = {
+			limit = {
+				is_female = no
+			}
+			define_ruler = {
+				name = "Jeanne"
+				change_mil = 3
+				female = yes
+			}
+		}
+		if = {
+			limit = {
+				has_heir = yes
+			}
+			remove_heir = {}
+		}
+		add_government_reform = holy_state_reform
+	
+
+
+
+

@@ -305,13 +305,11 @@ matrilineal_system = {
 	legacy_equivalent = matrilineal_system_legacy
 	potential = {
 		OR = {
-			primary_culture = nubian
 			have_had_reform = matrilineal_system
 		}
 	}
 	trigger = {
 		OR = {
-			primary_culture = nubian
 			have_had_reform = matrilineal_system
 		}
 	}

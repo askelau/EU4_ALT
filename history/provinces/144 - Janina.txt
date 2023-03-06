@@ -1,0 +1,27 @@
+#144 - Epiros
+
+owner = EPI
+controller = EPI
+culture = greek
+religion = catholic
+capital = "Ioannina"
+trade_goods = salt
+hre = no
+base_tax = 2
+base_production = 1
+base_manpower = 1
+is_city = yes
+fort_15th = yes
+add_core = EPI
+add_core = BYZ
+discovered_by = KAZ
+discovered_by = CRI
+discovered_by = GOL
+discovered_by = AST
+discovered_by = QAS
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+discovered_by = western
+
+
