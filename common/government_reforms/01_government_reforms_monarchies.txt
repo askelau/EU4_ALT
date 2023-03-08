@@ -4155,3 +4155,19 @@ gryffindor_monarchy = {
 		locked_government_type = yes	
 	}	
 }
+
+dwarven_kingdom = {
+	icon = "castle"
+	allow_normal_conversion = np
+	legacy_equivalent = dwarven_kingdom_legacy
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	modifiers = {
+		inflation_reduction = 0.1
+		legitimacy = 1
+	}
+
+	custom_attributes = {
+		locked_government_type = yes	
+	}	
+}

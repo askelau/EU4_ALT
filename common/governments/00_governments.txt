@@ -63,6 +63,7 @@ monarchy = {
 				polish_autocratic_monarchy
 				lithuanian_grand_kingdom
 				lithuanian_grand_empire
+				dwarven_kingdom
 			}
 		}
 		hereditary_vs_nobility = {
@@ -240,6 +241,7 @@ monarchy = {
 		solomonic_empire_legacy
 		musa_rule_legacy
 		mossi_federal_kingdom_legacy
+		dwarven_kingdom_legacy
 	}
 
 	# Each group of exclusive reforms are mutually exclusive to each other
@@ -1119,6 +1121,10 @@ pre_dharma_mapping = {
 	hufflepuff_republic = {
 		government = republic
 		legacy_government = hufflepuff_republic_legacy
+	}
+	dwarven_kingdom = {
+		government = monarchy
+		legacy_government = dwarven_kingdom_legacy
 	}
 	
 }

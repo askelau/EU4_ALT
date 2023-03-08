@@ -2988,3 +2988,17 @@ hufflepuff_republic_legacy = {
 		factor = 5
 	}
 }
+
+dwarven_kingdom_legacy = {
+	icon = "castle"
+	allow_normal_conversion = no
+	legacy_government = yes
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	monarchy = yes
+	modifiers = {
+		inflation_reduction = 0.1
+		legitimacy = 1
+	}
+}
