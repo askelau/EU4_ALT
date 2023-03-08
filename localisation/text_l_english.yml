@@ -8167,3 +8167,6 @@
  HAS_MORE_MANDATE_THAN_TRIBUTARY_HAS_DEV:0 "Have Mandate of at least of §Y0.4 of [From.GetName]'s§! Total Development"
  conversion_variable:0 "[Root.num_converted_religion.GetValue]"
  conversion_variable_zero:0 "0"
+
+ dwarven:0 "Dwarven"
+ alpine_dwarven:0 "Alpine Dwarven"

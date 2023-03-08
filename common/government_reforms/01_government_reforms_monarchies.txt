@@ -4165,6 +4165,7 @@ dwarven_kingdom = {
 	modifiers = {
 		inflation_reduction = 0.1
 		legitimacy = 1
+		fort_maintenance_modifier = -0.5
 	}
 
 	custom_attributes = {

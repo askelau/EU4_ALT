@@ -3000,5 +3000,6 @@ dwarven_kingdom_legacy = {
 	modifiers = {
 		inflation_reduction = 0.1
 		legitimacy = 1
+		fort_maintenance_modifier = -0.5
 	}
 }

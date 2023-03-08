@@ -9550,3 +9550,27 @@ lost_cultures_group = {
 		}
 	}
 }
+
+
+dwarven = {
+	graphical_culture = westerngfx
+
+	alpine_dwarven = {
+		primary = TTL
+		dynasty_names = {
+			"Greathead" "Oakenriver" "Forgebrand" "Lighthelm" "Barbedback" "Flaskguard" "Brownminer" "Battlebraid" "Brewgranite" "Windjaw"
+		}
+		male_names = {
+			"Erimrolin" "Sarfomi" "Thrarbas" "Jorgrik" "Skaznunli" "Samdear" "Whustreack" "Dhukhack" "Krathud" "Yoldrouk" "Kramnumi" "Hadroud" "Akgred" "Groutak" "Nerick" "Elssaen" "Grouvolir" "Barikhoki" "Loteack" "Yussod"
+		}
+		female_names = {
+			"Snateahilde" "Adgrini" "Beznubelynn" "Fozeastr" "Bubilda" "Khourdroukara" "Dhuddeadeth" "Thukrataine" "Ukhere" "Thefaegit"
+		}
+	}
+	female_names = {
+		
+	}
+	male_names = {
+		
+	}
+}
