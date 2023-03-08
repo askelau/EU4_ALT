@@ -1,0 +1,45 @@
+government = theocracy
+add_government_reform = holy_state_reform
+government_rank = 2
+technology_group = western
+religion = catholic
+primary_culture = irish
+add_accepted_culture = breton
+add_accepted_culture = welsh
+add_accepted_culture = highland_scottish
+add_accepted_culture = galician
+add_accepted_culture = cornish
+historical_friend = SCO
+capital = 4118	# Cork
+
+# Earls of Desmond
+
+add_country_modifier = {
+			name = "sisters_takeover"
+			duration = -1
+		}
+		if = {
+			limit = {
+				NOT = { government = theocracy }
+			}
+			change_government = theocracy
+		}
+
+		if = {
+			limit = {
+				is_female = no
+			}
+			define_ruler = {
+				name = "Jeanne"
+				change_mil = 3
+				female = yes
+			}
+		}
+		if = {
+			limit = {
+				has_heir = yes
+			}
+			remove_heir = {}
+		}
+		add_government_reform = holy_state_reform
+	

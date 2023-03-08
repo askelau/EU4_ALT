@@ -1,0 +1,22 @@
+# 170 Finist�re - Principal cities: Brest
+
+owner = DMS
+controller = DMS
+capital = "Brest"
+is_city = yes
+culture = breton
+religion = catholic
+hre = no
+base_tax = 3 
+base_production = 3
+trade_goods = naval_supplies
+base_manpower = 4
+add_core = DMS
+fort_15th = yes
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+extra_cost = 8
+center_of_trade = 1
+
