@@ -1,0 +1,11 @@
+government = monarchy
+add_government_reform = dwarven_kingdom
+primary_culture = pyreneese_dwarven
+religion = catholic
+technology_group = western
+capital = 210	# Pamplona
+
+
+
+
+
