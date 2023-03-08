@@ -1,0 +1,9 @@
+government = monarchy
+add_government_reform = dwarven_kingdom
+government_rank = 1
+technology_group = eastern
+primary_culture = balkan_dwarven
+religion = orthodox
+capital = 138	# Zabljak
+fixed_capital = 138 # Cannot move capital away from this province & no power cost to move to it
+

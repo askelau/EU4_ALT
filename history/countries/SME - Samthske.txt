@@ -1,0 +1,8 @@
+government = monarchy
+add_government_reform = dwarven_kingdom
+primary_culture = caucasian_dwarven
+religion = orthodox
+technology_group = eastern
+capital = 2204 # Kars
+government_rank = 1
+

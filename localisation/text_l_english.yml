@@ -8170,4 +8170,7 @@
 
  dwarven:0 "Dwarven"
  alpine_dwarven:0 "Alpine Dwarven"
- pyreneese_dwarven: "Pyreneese Dwarven"
+ pyreneese_dwarven:0 "Pyreneese Dwarven"
+ scandi_dwarven:0 "Scandi Dwarven"
+ balkan_dwarven:0 "Balkan Dwarven"
+ caucasian_dwarven:0 "Caucasian Dwarven"
