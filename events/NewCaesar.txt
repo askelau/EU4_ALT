@@ -1,0 +1,278 @@
+province_event = {
+	id = caesar.1
+	title = caesar.1.t
+	picture = COURT_eventPicture
+	
+	major = yes
+	is_triggered_only = yes
+	
+	desc = {
+		trigger = {
+			owner = { has_reform = caesar }
+			FROM = {
+				has_reform = caesar
+			}
+		}
+		desc = caesar.1.db
+	}
+	
+	desc = {
+		trigger = {
+			owner = { has_reform = caesar }
+			FROM = {
+				NOT = { has_reform = caesar }
+			}
+		}
+		desc = caesar.1.dc
+	}
+	
+	desc = {
+		trigger = {
+			owner = {
+				NOT = { has_reform = caesar }
+			}
+		}
+		desc = caesar.1.dd
+	}
+	
+	trigger = {
+		# OBS! These checks are also hard coded in WouldBecomeShogunIfTaking() for AI and interface reasons. Change code too if this trigger changes.
+		province_id = 118
+		owner = {
+			OR = {
+				has_reform = legionary
+				has_reform = indep_legionary
+			}
+		}
+	}
+	
+	immediate = {
+		#Save new owner as shogun if valid
+		hidden_effect = {
+			owner = {
+				if = {
+					limit = {
+						OR = {
+							has_reform = legionary
+							has_reform = indep_legionary
+						}
+					}
+					add_core = 118
+					set_capital = 118
+					#There was a bug, which made it possible that the new shogun remained a daimyo despite having Kyoto
+					#I couldn't replicate it though, so I hope the line below might fix it - in the worst case it does nothing
+					grant_independence = yes
+					add_government_reform = caesar
+					save_event_target_as = new_caesar
+				}
+			}
+		}
+		#Handle daimyo transfer
+		hidden_effect = {
+			#Case - new owner is the new shogun, previous still lives -> all daimyos get transferred from the previous to the new one
+			if = {
+				limit = {
+					FROM = { exists = yes }
+					owner = { has_reform = caesar }
+					FROM = { has_reform = caesar }
+				}
+				#Degrade the previous shogun to daimyo level
+				FROM = {
+					every_subject_country = {
+						limit = {
+							is_subject_of_type = daimyo_vassal
+						}
+						set_country_flag = tobe_legionary_of_new_caesar
+						grant_independence = yes
+					}
+					event_target:new_caesar = {
+						vassalize = FROM
+					}
+					set_government_rank = 1
+					add_government_reform = legionary
+				}
+				#Vassalize all of the former daimyos
+				#NOTE: originally, it was intended that daimyos, who are at war with the shogun, should not be vassalized
+				every_country = {
+					limit = {
+						has_country_flag = tobe_legionary_of_new_caesar
+					}
+					event_target:new_caesar = {
+						vassalize = PREV
+					}
+				}
+				owner = {
+					country_event = {
+						id = caesar.2
+						days = 1
+					}
+				}
+			}
+			#Case - new owner is not the new shogun, previous still lives -> all daimyos get free
+			if = {
+				limit = {
+					FROM = { exists = yes }
+					NOT = { owner = { has_reform = caesar } }
+					FROM = { has_reform = caesar }
+				}
+				FROM = {
+					every_subject_country = {
+						limit = {
+							is_subject_of_type = daimyo_vassal
+						}
+						grant_independence = yes
+						if = {
+							limit = {
+								has_reform = legionary
+							}
+							add_government_reform = indep_legionary
+						}
+					}
+					add_government_reform = indep_legionary
+				}
+			}
+			#Case - new owner is shogun, previous shogun is dead -> all daimyos become subjects of the new shogun
+			if = {
+				limit = {
+					NOT = {
+						FROM = { exists = yes }
+					}
+					owner = { has_reform = caesar }
+				}
+				every_country = {
+					limit = {
+						has_reform = legionary
+						NOT = { war_with = event_target:new_caesar }
+					}
+					event_target:new_caesar = {
+						vassalize = PREV
+					}
+				}
+				every_country = {
+					limit = {
+						has_reform = legionary
+						war_with = event_target:new_caesar
+					}
+					add_government_reform = indep_legionary
+				}
+			}
+			#Case - new owner is not the new shogun, previous one is dead -> all former daimyos become independent daimyo
+			if = {
+				limit = {
+					NOT = {
+						FROM = { exists = yes }
+					}
+					NOT = {
+						owner = { has_reform = caesar }
+					}
+				}
+				every_country = {
+					limit = { has_reform = legionary }
+					overlord = {
+						free_vassal = PREV
+					}
+					add_government_reform = indep_legionary
+				}
+			}
+		}
+		#Catch all remaining daimyos and let them free
+		hidden_effect = {
+			if = {
+				limit = {
+					any_country = {
+						is_subject_of_type = daimyo_vassal
+						NOT = { overlord = { has_reform = caesar } }
+					}
+				}
+				every_country = {
+					limit = {
+						is_subject_of_type = daimyo_vassal
+						NOT = { overlord = { has_reform = caesar } }
+					}
+					overlord = {
+						free_vassal = PREV
+					}
+					if = {
+						limit = {
+							has_reform = legionary
+						}
+						remove_government_reform = legionary
+						add_government_reform = indep_legionary
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "caesar.EVTOPTA1"
+		if = {
+			limit = {
+				owner = { has_reform = caesar }
+			}
+			custom_tooltip = claiming_the_shogunate_tooltip
+		}
+		if = {
+			limit = {
+				NOT = {
+					owner = { has_reform = caesar }
+				}
+			}
+			owner = {
+				if = {
+					limit = { NOT = { has_country_flag = destroyed_caesar } }
+					add_prestige = 20
+					add_adm_power = 50
+					add_dip_power = 50
+					add_mil_power = 50
+					set_country_flag = destroyed_caesar
+				}
+			}
+		}
+	}
+}
+
+
+
+# Cleaning event - all daimyos, who are at war with the country, who just became the new shogun, should defect from the new shogun
+country_event = {
+	id = caesar.2
+	title = caesar.2.t
+	desc = caesar.2.desc
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	hidden = yes
+	
+	option = { #We don't follow a bully
+		every_country = {
+			limit = {
+				has_country_flag = tobe_legionary_of_new_caesar
+			}
+			clr_country_flag = tobe_legionary_of_new_caesar
+			if = {
+				limit = {
+					war_with = ROOT
+					is_subject_of = ROOT
+				}
+				grant_independence = yes
+				if = {
+					limit = {
+						has_reform = legionary
+					}
+					add_government_reform = indep_legionary
+				}
+				#The Shogun should be able to retake his defected daimyos
+				reverse_add_casus_belli = {
+					target = ROOT
+					type = cb_vassalize_mission
+					months = 300
+				}
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+		}
+	}
+}

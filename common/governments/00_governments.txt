@@ -16,7 +16,9 @@ monarchy = {
 				chinese_warlord
 				grand_duchy_reform
 				daimyo
+				legionary
 				indep_daimyo
+				indep_legionary
 				elective_monarchy
 				iqta
 				ottoman_government
@@ -28,6 +30,7 @@ monarchy = {
 				feudal_theocracy
 				celestial_empire
 				shogunate
+				caesar
 				english_monarchy
 				gryffindor_monarchy
 				mandala_reform
@@ -232,8 +235,11 @@ monarchy = {
 		prussian_monarchy_legacy
 		iqta_legacy
 		daimyo_legacy
+		legionary_legacy
 		shogunate_legacy
+		caesar_legacy
 		indep_daimyo_legacy
+		indep_legionary_legacy
 		principality_legacy
 		tsardom_legacy
 		holy_state_legacy
@@ -1050,13 +1056,25 @@ pre_dharma_mapping = {
 		government = monarchy
 		legacy_government = daimyo_legacy
 	}
+	legionary = {
+		government = monarchy
+		legacy_government = legionary_legacy
+	}
 	shogunate = {
 		government = monarchy
 		legacy_government = shogunate_legacy
 	}
+	caesar = {
+		government = monarchy
+		legacy_government = caesar_legacy
+	}
 	indep_daimyo = {
 		government = monarchy
 		legacy_government = indep_daimyo_legacy
+	}
+	indep_legionary = {
+		government = monarchy
+		legacy_government = indep_legionary_legacy
 	}
 	colonial_government = {
 		government = republic

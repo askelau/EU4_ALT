@@ -4172,3 +4172,104 @@ dwarven_kingdom = {
 		locked_government_type = yes	
 	}	
 }
+
+caesar = {
+	icon = "shogunate"
+	allow_normal_conversion = yes
+	potential = {
+		NOT = { has_country_flag = formed_japan_flag }
+		OR = {
+			AND = {
+				capital_scope = {
+					province_id = 118
+				}
+			}
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = caesar
+			}
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 50
+	nation_designer_trigger = {
+		owns = 118
+	}
+	legacy_equivalent = caesar_legacy
+	fixed_rank = 2
+	maintain_dynasty = yes
+	allow_vassal_war = yes
+	allow_vassal_alliance = yes
+	lock_level_when_selected = yes
+	can_change_primary_culture = no
+
+	modifiers = {
+		diplomats = 1
+		envoy_travel_time = -0.25
+		max_absolutism = 5
+	}
+
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}
+
+legionary = {
+	icon = "daimyo"
+	allow_normal_conversion = no
+	potential = {
+		NOT = { has_country_flag = formed_japan_flag }
+		overlord = { has_reform = caesar }
+	}
+	replacement_on_independence_war = indep_legionary
+	legacy_equivalent = legionary_legacy
+	fixed_rank = 1
+	maintain_dynasty = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	lock_level_when_selected = yes
+	nation_designer_trigger = {
+	}
+	modifiers = {
+		land_morale = 0.1
+		infantry_power = 0.1
+	}
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}
+
+indep_legionary = {
+	icon = "samurai"
+	allow_normal_conversion = no
+	potential = {
+		NOT = { has_country_flag = formed_japan_flag }
+		OR = {
+			AND = {
+				OR = {
+					#overlord = { NOT = { has_reform = caesar } }
+					is_subject = no
+					is_subject_of_type = tributary_state
+				}
+			}
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = indep_legionary
+			}
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	nation_designer_trigger = {
+	}
+	legacy_equivalent = indep_legionary_legacy
+	maintain_dynasty = yes
+
+	modifiers = {
+		land_morale = 0.1
+		infantry_power = 0.1
+	}
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}
